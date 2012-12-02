@@ -1,0 +1,37 @@
+Welcome!  This reversing challenge is meant to reinforce the readings from the book "Reversing: Secrets of Reverse Engineering" by Eldad Eilam.
+Specifically the readings from Appendix A of that book: Deciphering Code Structures.
+
+Directions:     The binary file named 'reversing_code_structures' is a program that contains various code structures discussed in Appendix A.  
+                Each code structure in the program makes a call to printf.  The string that is passed to this printf call will be a piece of the puzzle.
+                The strings making up the puzzle pieces are a base-64 encoded message.
+                Below, there will be a set of problems asking you to identify each code structure that is contained in the program.  When you
+                think you have correctly identified the code structure to a certain numbered problem,find the string that the code structure 
+                references when printf is called.  After you solve all of the problems, concatenate the strings together in the order that the problems 
+                are laid out.  For example, let's say the string solution to problem 1 is "Hello " and the string solution to problem 2 is "World" the strings would                be concatenated in the order of the problems thus you would get "Hello World" (problem1 + problem2).
+
+                Run your end solution through a base-64 decoder to decrypt the message and solve the problem!
+
+                Note:  Each code structure is separated by five NOP instructions.  
+
+PROBLEMS:
+
+1.  A 'for' loop with a signed integer for a counter				
+2.  A complex compound conditional using signed integers
+3.  A 'for' loop with a skip-cycle statement (uses the C keyword 'continue')
+4.  An if, else-if, else-if, else structure using signed integers
+5.  A 'while' loop using signed integer
+6.  An internal function
+7.  A 'while' loop with a 'break' statement inside of it
+8.  A single conditional statement using a signed integer
+9.  A complex compound conditional using unsigned integers
+10. A single compound conditional using unsigned integers 
+11. A 'switch' statement
+12. An if, else-if statement using unsigned integers
+13. An if-else statement using signed integers
+14. A 'do-while' loop where the counter is an usigned integer
+15. A simple compound conditional using signed integers
+
+
+
+
+
